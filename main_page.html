@@ -1,0 +1,158 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>ECars</title> 
+        <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <script src="js/bootstrap.bundle.min.js"></script> 
+        <style>
+
+            .img-fluid{
+                max-height: 50vh;
+            }
+        </style>
+    </head> 
+    <body>
+        <header> 
+            <!-- Панель навигации --> 
+            <nav class="navbar navbar-expand-md bg-light navbar-light">
+                <a class="navbar-brand mx-1" href="#">Top ECars</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item border border-black border-3 bg-black me-5">
+                            <a class="nav-link active text-warning" href="#">MainPage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FastestECars</a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a class="nav-link disabled" href="#">PowerfullECars</a>
+                        </li>
+                    </ul>
+                    <form  class="d-flex me-1"> 
+                        <input class="form-control" type="text" placeholder="Найти"> 
+                        <button class="btn btn-outline-success" type="submit">Find</button> 
+                    </form>
+                </div>
+            </nav>
+        </header> 
+
+        <div  
+            id="gallery"  
+            class="carousel slide carousel-dark mt-4"  
+            data-bs-ride="carousel" 
+            > 
+ 
+            <div class="carousel-inner"> 
+                <div class="carousel-item active"> 
+                    <img class="d-block mx-auto img-fluid" src="images/Tesla3.jpg" alt="">
+                </div> 
+                <div class="carousel-item">
+                    <img class="d-block mx-auto img-fluid" src="images/TeslaCT.jpg" alt="">
+                </div> 
+                <div class="carousel-item"> 
+                    <img class="d-block mx-auto img-fluid" src="images/TeslaRoadster.jpg" alt="">
+                </div> 
+                <div class="carousel-item"> 
+                    <img class="d-block mx-auto img-fluid" src="images/TeslaX.jpg" alt="">
+                </div> 
+                <div class="carousel-item"> 
+                    <img class="d-block mx-auto img-fluid" src="images/TeslaY.jpg" alt="">
+                </div> 
+            </div> 
+
+            <button  
+                class="carousel-control-prev"  
+                type="button"  
+                data-bs-target="#gallery"  
+                data-bs-slide="prev"> 
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+                <span class="visually-hidden">Предыдущий</span> 
+            </button> 
+            <button  
+                class="carousel-control-next"  
+                type="button"  
+                data-bs-target="#gallery"  
+                data-bs-slide="next"> 
+                <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+                <span class="visually-hidden">Следующий</span> 
+            
+            </button>
+
+        </div>
+
+        <main class="container mt-5 mb-5"> 
+            <div class="row border border-2 border-black"> 
+                <div class="col-md-9"> 
+                  <h2> 
+                    Tesla Model 3  
+                  </h2> 
+                  <p class="lead"> 
+                    Tesla model 3 is an electric five-seat sedan manufactured by Tesla. The model was unveiled on March 31, 2016. The Tesla Model 3 is based on a new platform, different from the one used in the Tesla Model S and Tesla Model X. 
+                  </p> 
+                  <p class="lead"> 
+                    The car was initially produced in Fremont, California, with batteries and electric motors supplied by Gigafactory 1. The car was later also produced in Shanghai. 
+                  </p> 
+                  
+                </div> 
+                <div class="col-md-3 text-center mx-auto my-auto mb-2 mb-md-auto"> 
+                  <img src="images/Tesla3.jpg" class="img-fluid"> 
+                </div> 
+            </div>
+            <div class="row border border-2 border-black mt-2">
+                <div class="col-md-12"> 
+                    <h2> 
+                        Tesla Roadster
+                    </h2> 
+                    <p class="lead"> 
+                        Tesla Roadster is a sports electric car, the first car of the American company Tesla. It was produced in 2008-2012, about 2600 cars were assembled.  
+                    </p> 
+                    <p class="lead"> 
+                        The price of the car is about 110 thousand dollars. The official presentation took place on July 19, 2006 in Santa Monica, California. Tesla Roadster can accelerate to 100 km/h in less than 4 seconds. The maximum speed is forcibly limited to 201.1 km/h. 
+                    </p> 
+                    <p class="lead"> 
+                        The charge of lithium-ion (Li-ion) batteries is enough for 300-400 km. A full charge of the batteries takes 3.5 hours. The cost of the base model is 109,000 dollars.
+                    </p> 
+                </div> 
+            </div> 
+            <div class="row mt-2 border border-2 border-black">
+                <div class="col-md-9 order-sm-0 order-md-1"> 
+                    <h2> 
+                        Tesla Model X
+                    </h2> 
+                    <p class="lead"> 
+                        The Tesla Model X is a battery electric mid-size luxury crossover SUV built by Tesla, Inc. since 2015. Developed from the full-sized sedan platform of the Tesla Model S, the vehicle notably uses falcon wing doors for passenger access.
+                    </p> 
+                    <p class="lead"> 
+                        The Model X has an EPA size class as an SUV, and shares around 30 percent of its content with the Model S, half of the originally planned 60 percent, and weighs about 10 percent more.
+                    </p> 
+                    <p class="lead"> 
+                        Both the Model X and Model S are produced at the Tesla Factory in Fremont, California.
+                    </p> 
+                </div> 
+                <div class="col-md-3 text-center mx-auto my-auto mb-2 mb-md-auto"> 
+                    <img src="images/TeslaX.jpg" class="img-fluid"> 
+                </div> 
+            </div> 
+        </main>
+
+        <footer class="bg-light py-4 mt-5">
+            <div class="container text-center">
+              <p class="mb-1">&copy; Явиц Павел Владимирович, Б9122-09.03.04(2)</p>
+              <p class="mb-0">Контакты: <a href="https://vk.com/yam1noko">ВК</a></p>
+            </div>
+        </footer>
+
+
+
+    </body>
+</html>
